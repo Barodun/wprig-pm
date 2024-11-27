@@ -1,0 +1,141 @@
+/*--------------------------------------------------------------
+## Basic navigation menus - handles submenu and small screen toggle
+--------------------------------------------------------------*/
+.nav--toggle-small .menu-toggle {
+	display: block;
+	width: 3rem;
+	height: 3rem;
+	margin: 0;
+	padding: 0;
+	font-family: var(--highlight-font-family);
+	font-stretch: condensed;
+	font-size: 80%;
+	text-transform: uppercase;
+	border: 2px solid var(--border-color-dark);
+	border-radius: 0;
+	background: transparent;
+}
+
+.nav--toggle-small {
+
+	& .menu {
+		display: none;
+	}
+
+	&.nav--toggled-on {
+
+		& .menu {
+			display: block;
+		}
+
+
+		& .menu {
+			display: flex;
+			justify-content: center;
+		}
+
+		& .menu-toggle.icon svg.close {
+			display: block;
+		}
+
+		& svg.open-menu {
+			display: none;
+		}
+	}
+
+	&.icon-nav {
+
+		& .menu {
+			display: block;
+		}
+
+
+		& .menu {
+			display: flex;
+			justify-content: center;
+		}
+
+
+		& .primary-menu-container {
+			position: fixed;
+			z-index: -5;
+			background: var(--color-theme-white);
+			width: 100vw;
+			top: -100%;
+			left: 0;
+			height: 100%;
+			padding: var(--spacing-m) var(--spacing-xs);
+			transition: all 0.3s;
+		}
+
+		/* & .menu {
+				visibility: visible;
+			} */
+
+		&.nav--toggled-on {
+
+			& .menu-toggle span.dashicons::before {
+				content: "\f158";
+			}
+
+			& .primary-menu-container {
+				z-index: 99;
+				top: 0;
+				opacity: 1;
+				transition: opacity 0.3s ease, top 0.3s ease-out;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.nav--toggle-sub .dropdown,
+.nav--toggle-sub .dropdown-toggle,
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-icon {
+	display: block;
+	background: transparent;
+	position: relative;
+	right: 0;
+	top: 50%;
+	width: var(--dropdown-symbol-width);
+	height: var(--dropdown-symbol-width);
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	transform: translateY(-50%);
+	overflow: visible;
+}
+
+.nav--toggle-sub .dropdown-symbol {
+	display: block;
+	background: transparent;
+	position: absolute;
+	right: 20%;
+	/* top: 35%; */
+	width: 60%;
+	height: 60%;
+	border: solid var(--border-color-dark);
+	border-width: 0 2px 2px 0;
+	transform: translateY(-50%) rotate(45deg);
+	transition: transform 0.2s;
+}
+
+.nav--toggle-sub li.menu-item--toggled-on>button.dropdown-toggle .dropdown-symbol {
+	transform: translateY(-50%) rotate(225deg);
+}
+
+.nav--toggle-sub li.menu-item--toggled-on button.wp-block-navigation__submenu-icon svg {
+	transition: transform 0.2s;
+}
+
+.nav--toggle-sub li.menu-item--toggled-on>button.wp-block-navigation-submenu__toggle svg {
+	transform: rotate(180deg);
+}
+
+
+.nav--toggle-small.nav--toggled-on .menu {
+	display: block;
+}

@@ -1,0 +1,28 @@
+{
+    "theme": {
+      "slug": "pm",
+      "name": "Pantsevich Media",
+      "author": "Panstsevich.me"
+    },
+    "dev": {
+      "browserSync": {
+        "live": true,
+        "proxyURL": "pantsevich.local",
+        "bypassPort": "8181",
+        "https": false
+      }
+    },
+    "export": {
+      "compress": true,
+      "generatePotFile": true,
+      "filesToCopy": [
+        "LICENSE",
+        "readme.txt",
+        "screenshot.png",
+        "assets/css/vendor//*.css",
+        "assets/js/vendor//*.js",
+        "inc/EZ_Customizer/themeCustomizeSettings.json",
+        "assets/data/**"
+      ]
+    }
+  }

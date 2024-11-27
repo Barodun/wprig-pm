@@ -1,0 +1,19 @@
+/*----------------------------
+# Backgrounds
+----------------------------*/
+
+.bg-color--black {
+	background-color: var(--color-theme-black);
+}
+
+.bg-color--grey {
+	background-color: var(--color-theme-grey);
+}
+
+.bg-color--white {
+	background-color: var(--color-theme-white);
+}
+
+.bg-color--l-grey {
+	background-color: var(--color-theme-l-grey);
+}

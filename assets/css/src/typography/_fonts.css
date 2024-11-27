@@ -1,0 +1,135 @@
+/*----------------------------
+# Local hosted fonts enqueue
+----------------------------*/
+
+/*----------------------------
+# Local hosted fonts enqueue
+----------------------------*/
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/Canela-Regular.woff2') format('woff2'),
+         url('../fonts/Canela-Regular.woff') format('woff'),
+         url('../fonts/Canela-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/Canela-RegularItalic.woff2') format('woff2'),
+         url('../fonts/Canela-RegularItalic.woff') format('woff'),
+         url('../fonts/Canela-RegularItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/Canela-Bold.woff2') format('woff2'),
+         url('../fonts/Canela-Bold.woff') format('woff'),
+         url('../fonts/Canela-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/Canela-BoldItalic.woff2') format('woff2'),
+         url('../fonts/Canela-BoldItalic.woff') format('woff'),
+         url('../fonts/Canela-BoldItalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Repeat for other font variants */
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/Canela-Black.woff2') format('woff2'),
+         url('../fonts/Canela-Black.woff') format('woff'),
+         url('../fonts/Canela-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/Canela-BlackItalic.woff2') format('woff2'),
+         url('../fonts/Canela-BlackItalic.woff') format('woff'),
+         url('../fonts/Canela-BlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Light and Medium variants */
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/Canela-Light.woff2') format('woff2'),
+         url('../fonts/Canela-Light.woff') format('woff'),
+         url('../fonts/Canela-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/Canela-LightItalic.woff2') format('woff2'),
+         url('../fonts/Canela-LightItalic.woff') format('woff'),
+         url('../fonts/Canela-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/Canela-Medium.woff2') format('woff2'),
+         url('../fonts/Canela-Medium.woff') format('woff'),
+         url('../fonts/Canela-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/Canela-MediumItalic.woff2') format('woff2'),
+         url('../fonts/Canela-MediumItalic.woff') format('woff'),
+         url('../fonts/Canela-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.woff2') format('woff2'),
+         url('../fonts/Helvetica.woff') format('woff'),
+         url('../fonts/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica-Oblique.woff2') format('woff2'),
+         url('../fonts/Helvetica-Oblique.woff') format('woff'),
+         url('../fonts/Helvetica-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica-Bold.woff2') format('woff2'),
+         url('../fonts/Helvetica-Bold.woff') format('woff'),
+         url('../fonts/Helvetica-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica-BoldOblique.woff2') format('woff2'),
+         url('../fonts/Helvetica-BoldOblique.woff') format('woff'),
+         url('../fonts/Helvetica-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}

@@ -1,0 +1,380 @@
+/**
+ * Typography System
+ *
+ * This SCSS file establishes consistent and adaptable typographic styles for various screen sizes using structured maps and mixins.
+ */
+.is-uppercase {
+  text-transform: uppercase !important;
+}
+
+.font--normal {
+  font-family: var(--global-font-family) !important;
+}
+
+.font--heading {
+  font-family: var(--heading-font-family) !important;
+}
+
+.typo--normal {
+  font-style: normal !important;
+}
+
+.typo--italic {
+  font-style: italic !important;
+}
+
+.typo--light {
+  font-weight: 300 !important;
+}
+
+.typo--regular {
+  font-weight: 400 !important;
+}
+
+.typo--medium {
+  font-weight: 500 !important;
+}
+
+.typo--semibold {
+  font-weight: 600 !important;
+}
+
+.typo--bold {
+  font-weight: 700 !important;
+}
+
+.typo--extra-bold {
+  font-weight: 800 !important;
+}
+
+.typo--black {
+  font-weight: 900 !important;
+}
+
+.typo--h1 {
+  font-size: 8.4rem !important;
+  line-height: 1.1 !important;
+}
+
+.typo--h2 {
+  font-size: 6.8rem !important;
+  line-height: 1.125 !important;
+}
+
+.typo--h3 {
+  font-size: 3.2rem !important;
+  line-height: 1.375 !important;
+}
+
+.typo--h4 {
+  font-size: 3.2rem !important;
+  line-height: 1.375 !important;
+}
+
+.typo--h5 {
+  font-size: 2.6rem !important;
+  line-height: 1.25 !important;
+}
+
+.typo--h6 {
+  font-size: 1.2rem !important;
+  line-height: 1.25 !important;
+}
+
+.typo--body-big {
+  font-size: 1.8rem !important;
+  line-height: 1.25 !important;
+}
+
+.typo--small {
+  font-size: 1rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.22em !important;
+}
+
+@media (min-width: 769px) {
+  .is-uppercase__tablet {
+    text-transform: uppercase !important;
+  }
+  .font--normal__tablet {
+    font-family: var(--global-font-family) !important;
+  }
+  .font--heading__tablet {
+    font-family: var(--heading-font-family) !important;
+  }
+  .typo--normal__tablet {
+    font-style: normal !important;
+  }
+  .typo--italic__tablet {
+    font-style: italic !important;
+  }
+  .typo--light__tablet {
+    font-weight: 300 !important;
+  }
+  .typo--regular__tablet {
+    font-weight: 400 !important;
+  }
+  .typo--medium__tablet {
+    font-weight: 500 !important;
+  }
+  .typo--semibold__tablet {
+    font-weight: 600 !important;
+  }
+  .typo--bold__tablet {
+    font-weight: 700 !important;
+  }
+  .typo--extra-bold__tablet {
+    font-weight: 800 !important;
+  }
+  .typo--black__tablet {
+    font-weight: 900 !important;
+  }
+  .typo--h1__tablet {
+    font-size: 8.4rem !important;
+    line-height: 1.1 !important;
+  }
+  .typo--h2__tablet {
+    font-size: 6.8rem !important;
+    line-height: 1.125 !important;
+  }
+  .typo--h3__tablet {
+    font-size: 3.2rem !important;
+    line-height: 1.375 !important;
+  }
+  .typo--h4__tablet {
+    font-size: 3.2rem !important;
+    line-height: 1.375 !important;
+  }
+  .typo--h5__tablet {
+    font-size: 2.6rem !important;
+    line-height: 1.25 !important;
+  }
+  .typo--h6__tablet {
+    font-size: 1.2rem !important;
+    line-height: 1.25 !important;
+  }
+  .typo--body-big__tablet {
+    font-size: 1.8rem !important;
+    line-height: 1.25 !important;
+  }
+  .typo--small__tablet {
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0.22em !important;
+  }
+}
+@media (min-width: 1024px) {
+  .is-uppercase__desktop {
+    text-transform: uppercase !important;
+  }
+  .font--normal__desktop {
+    font-family: var(--global-font-family) !important;
+  }
+  .font--heading__desktop {
+    font-family: var(--heading-font-family) !important;
+  }
+  .typo--normal__desktop {
+    font-style: normal !important;
+  }
+  .typo--italic__desktop {
+    font-style: italic !important;
+  }
+  .typo--light__desktop {
+    font-weight: 300 !important;
+  }
+  .typo--regular__desktop {
+    font-weight: 400 !important;
+  }
+  .typo--medium__desktop {
+    font-weight: 500 !important;
+  }
+  .typo--semibold__desktop {
+    font-weight: 600 !important;
+  }
+  .typo--bold__desktop {
+    font-weight: 700 !important;
+  }
+  .typo--extra-bold__desktop {
+    font-weight: 800 !important;
+  }
+  .typo--black__desktop {
+    font-weight: 900 !important;
+  }
+  .typo--h1__desktop {
+    font-size: 8.4rem !important;
+    line-height: 1.1 !important;
+  }
+  .typo--h2__desktop {
+    font-size: 6.8rem !important;
+    line-height: 1.125 !important;
+  }
+  .typo--h3__desktop {
+    font-size: 3.2rem !important;
+    line-height: 1.375 !important;
+  }
+  .typo--h4__desktop {
+    font-size: 3.2rem !important;
+    line-height: 1.375 !important;
+  }
+  .typo--h5__desktop {
+    font-size: 2.6rem !important;
+    line-height: 1.25 !important;
+  }
+  .typo--h6__desktop {
+    font-size: 1.2rem !important;
+    line-height: 1.25 !important;
+  }
+  .typo--body-big__desktop {
+    font-size: 1.8rem !important;
+    line-height: 1.25 !important;
+  }
+  .typo--small__desktop {
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0.22em !important;
+  }
+}
+@media (min-width: 1216px) {
+  .is-uppercase__widescreen {
+    text-transform: uppercase !important;
+  }
+  .font--normal__widescreen {
+    font-family: var(--global-font-family) !important;
+  }
+  .font--heading__widescreen {
+    font-family: var(--heading-font-family) !important;
+  }
+  .typo--normal__widescreen {
+    font-style: normal !important;
+  }
+  .typo--italic__widescreen {
+    font-style: italic !important;
+  }
+  .typo--light__widescreen {
+    font-weight: 300 !important;
+  }
+  .typo--regular__widescreen {
+    font-weight: 400 !important;
+  }
+  .typo--medium__widescreen {
+    font-weight: 500 !important;
+  }
+  .typo--semibold__widescreen {
+    font-weight: 600 !important;
+  }
+  .typo--bold__widescreen {
+    font-weight: 700 !important;
+  }
+  .typo--extra-bold__widescreen {
+    font-weight: 800 !important;
+  }
+  .typo--black__widescreen {
+    font-weight: 900 !important;
+  }
+  .typo--h1__widescreen {
+    font-size: 8.4rem !important;
+    line-height: 1.1 !important;
+  }
+  .typo--h2__widescreen {
+    font-size: 6.8rem !important;
+    line-height: 1.125 !important;
+  }
+  .typo--h3__widescreen {
+    font-size: 3.2rem !important;
+    line-height: 1.375 !important;
+  }
+  .typo--h4__widescreen {
+    font-size: 3.2rem !important;
+    line-height: 1.375 !important;
+  }
+  .typo--h5__widescreen {
+    font-size: 2.6rem !important;
+    line-height: 1.25 !important;
+  }
+  .typo--h6__widescreen {
+    font-size: 1.2rem !important;
+    line-height: 1.25 !important;
+  }
+  .typo--body-big__widescreen {
+    font-size: 1.8rem !important;
+    line-height: 1.25 !important;
+  }
+  .typo--small__widescreen {
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0.22em !important;
+  }
+}
+@media (min-width: 1408px) {
+  .is-uppercase__fullhd {
+    text-transform: uppercase !important;
+  }
+  .font--normal__fullhd {
+    font-family: var(--global-font-family) !important;
+  }
+  .font--heading__fullhd {
+    font-family: var(--heading-font-family) !important;
+  }
+  .typo--normal__fullhd {
+    font-style: normal !important;
+  }
+  .typo--italic__fullhd {
+    font-style: italic !important;
+  }
+  .typo--light__fullhd {
+    font-weight: 300 !important;
+  }
+  .typo--regular__fullhd {
+    font-weight: 400 !important;
+  }
+  .typo--medium__fullhd {
+    font-weight: 500 !important;
+  }
+  .typo--semibold__fullhd {
+    font-weight: 600 !important;
+  }
+  .typo--bold__fullhd {
+    font-weight: 700 !important;
+  }
+  .typo--extra-bold__fullhd {
+    font-weight: 800 !important;
+  }
+  .typo--black__fullhd {
+    font-weight: 900 !important;
+  }
+  .typo--h1__fullhd {
+    font-size: 8.4rem !important;
+    line-height: 1.1 !important;
+  }
+  .typo--h2__fullhd {
+    font-size: 6.8rem !important;
+    line-height: 1.125 !important;
+  }
+  .typo--h3__fullhd {
+    font-size: 3.2rem !important;
+    line-height: 1.375 !important;
+  }
+  .typo--h4__fullhd {
+    font-size: 3.2rem !important;
+    line-height: 1.375 !important;
+  }
+  .typo--h5__fullhd {
+    font-size: 2.6rem !important;
+    line-height: 1.25 !important;
+  }
+  .typo--h6__fullhd {
+    font-size: 1.2rem !important;
+    line-height: 1.25 !important;
+  }
+  .typo--body-big__fullhd {
+    font-size: 1.8rem !important;
+    line-height: 1.25 !important;
+  }
+  .typo--small__fullhd {
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0.22em !important;
+  }
+}
+
+/*# sourceMappingURL=_typography-system.css.map */

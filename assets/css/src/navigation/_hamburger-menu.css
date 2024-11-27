@@ -1,0 +1,56 @@
+/*--------------------------------------------------------------
+# Hamburger menu
+--------------------------------------------------------------*/
+
+/**
+ * The markup can be adjusted in customize_mobile_menu_toggle() function
+ * at the /inc/Nav_Menus/Component.php file.
+ */
+
+.hamburger {
+	position: relative;
+	transition-duration: 500ms;
+}
+
+.hamburger .meat {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	height: 4px;
+	width: 4px;
+	border-radius: 50%;
+	background-color: var(--color-theme-grey);
+	transition-duration: 300ms;
+}
+
+.hamburger .meat1,
+.hamburger .meat2 {
+	transform: translate(calc(-50% - 1rem), -50%);
+}
+
+.hamburger .meat3,
+.hamburger .meat4 {
+	transform: translate(calc(-50% + 1rem), -50%);
+}
+
+.nav--toggled-on .meat {
+	background-color: var(--color-theme-black);
+}
+
+.nav--toggled-on .meat3 {
+	transform: translate(calc(-50% - 1rem), calc(-50% - 1rem));
+}
+
+.nav--toggled-on .meat4 {
+	transform: translate(calc(-50% - 1rem), calc(-50% + 1rem));
+}
+
+.nav--toggled-on .meat1 {
+	transform: translate(calc(-50% + 1rem), calc(-50% - 1rem));
+}
+
+.nav--toggled-on .meat2 {
+	transform: translate(calc(-50% + 1rem), calc(-50% + 1rem));
+}

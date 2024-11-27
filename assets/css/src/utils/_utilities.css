@@ -1,0 +1,45 @@
+/*----------------------------
+# Utilities
+*
+* Place for various reusable classes
+* @link https://docs.wprig.org/assets-optimization/css-utilities
+----------------------------*/
+
+/* Class for hiding elements from users but not from robots */
+.visuallyhidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(0 0 99.9% 99.9%);
+	clip-path: inset(0 0 99.9% 99.9%);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+	padding: 0;
+	border: 0;
+}
+
+/* Full screen width element even if it placed in container */
+.full-width {
+	width: 100vw;
+	max-width: none;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+/* Sticky element */
+.is-sticky {
+	position: sticky;
+	top: 0;
+	height: fit-content;
+}
+
+
+@media (--desktop-query) {
+	.full-width {
+		width: calc(100vw - 6.8rem);
+		margin-left: calc(-50vw + 6.8rem);
+	}
+}

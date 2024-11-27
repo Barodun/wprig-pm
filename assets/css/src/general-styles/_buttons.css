@@ -1,0 +1,85 @@
+/*----------------------------
+# Buttons
+----------------------------*/
+
+/*----------------------------
+## Buttons: Sizes
+----------------------------*/
+
+/* Reserve a space using paddings to adjust the size.
+ *
+ * You can find and example below.
+ */
+
+
+.btn--size-normal {
+	padding: var(--spacing-2xs) var(--spacing-xs);
+}
+
+.btn--size-big {
+	padding: var(--spacing-s) var(--spacing-l);
+}
+
+/*----------------------------
+## Buttons: Colors
+----------------------------*/
+
+.btn-white {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 1.6rem;
+	line-height: 1.4rem;
+	padding: var(--spacing-2xs) var(--spacing-s);
+	color: var(--color-theme-text-grey);
+	border: 1px solid var(--color-theme-white);
+	border-radius: 5rem;
+	transition: all var(--animation-speed);
+}
+
+.btn-white:hover {
+	background-color: var(--color-theme-white);
+	color: var(--color-theme-black);
+}
+
+.btn-black {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 1.6rem;
+	line-height: 1.4rem;
+	padding: var(--spacing-2xs) var(--spacing-s);
+	color: var(--color-theme-white);
+	border: 1px solid var(--color-theme-black);
+	background-color: var(--color-theme-black);
+	border-radius: 5rem;
+	transition: all var(--animation-speed);
+}
+
+.btn-black::after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 1.4rem;
+	height: 1.4rem;
+	mask-image: url('data:image/svg+xml,<svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4H15M15 4L12 7M15 4L12 1" stroke="%23E1E1E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+	mask-size: contain;
+	mask-position: center;
+	mask-repeat: no-repeat;
+	margin-left: var(--spacing-3xs);
+	background-color: var(--color-theme-white);
+}
+
+.btn-black:hover {
+	opacity: 0.9;
+}
+
+/* We could add classes that include icons for buttons. One option is to encode small icons to base64. */
+
+/* Full screen view for buttons on mobile */
+@media (--mobile-query) {
+
+	.btn--primary.is-full-mobile,
+	.btn--secondary.is-full-mobile {
+		width: 100%;
+		text-align: center;
+	}
+}

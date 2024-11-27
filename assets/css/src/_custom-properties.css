@@ -1,0 +1,88 @@
+/**
+ * Custom Properties
+ * aka CSS variables.
+ *
+ * @link: https://developer.mozilla.org/en-US/docs/Web/CSS/--*
+ **/
+
+:root {
+	--content-width: 45rem;
+	--dropdown-symbol-width: 0.7em;
+
+	/* Typography */
+	--global-font-family: "Helvetica", sans-serif;
+	--heading-font-family: "Canela", sans-serif;
+	--global-font-size: 1.6rem;
+	--global-line-height: 2;
+
+	/* * Select Font Scale:
+	 #	1.067 - Minor Second,
+	 #	1.125 - Major Second,
+	 #	1.2   - Minor Third,
+	 #	1.25  - Major Third,
+	 #	1.333 - Perfect Fourth,
+	 #	1.414 - Augmented Fourth,
+	 #	1.5   - Perfect Fifth,
+	 #	1.618 - Golden Ratio
+	 */
+	--global-font-scale: 1.333;
+
+	/* Custom font sizes */
+	--font-size-6xl: calc(var(--font-size-5xl) * var(--global-font-scale));
+	--font-size-5xl: calc(var(--font-size-4xl) * var(--global-font-scale));
+	--font-size-4xl: calc(var(--font-size-3xl) * var(--global-font-scale));
+	--font-size-3xl: calc(var(--font-size-2xl) * var(--global-font-scale));
+	--font-size-2xl: calc(var(--font-size-xl) * var(--global-font-scale));
+	--font-size-xl: calc(var(--font-size-l) * var(--global-font-scale));
+	--font-size-l: calc(var(--font-size-r) * var(--global-font-scale));
+	--font-size-r: var(--global-font-size);
+	--font-size-s: calc(var(--font-size-r) / var(--global-font-scale));
+	--font-size-xs: calc(var(--font-size-s) / var(--global-font-scale));
+	--font-size-2xs: calc(var(--font-size-xs) / var(--global-font-scale));
+
+	/**
+	* Colors
+	*
+	* Custom values for color pallete.
+	*
+	* Read more about effective tecniques at the link below
+	* @link: https://docs.wprig.org/assets-optimization/custom-properties
+	**/
+	--global-font-color: #FEFEFE;
+
+	/* Selection color */
+	--color-selection: #B3B3B3;
+
+	/* Scrollbar colors for unified browsers view */
+	--color-scrollbar: #cbd3e5;
+	--color-scrollbar-bg: #f9fbfc;
+
+	/* Custom editor colors */
+	--color-theme-black: #050505;
+	--color-theme-grey: #626262;
+	--color-theme-l-grey: #B3B3B3;
+	--color-theme-text-grey: #EBEBEB;
+	--color-theme-white: #FEFEFE;
+
+	/* Spacing */
+	--spacing-5xs: 0.2rem;
+	--spacing-4xs: 0.4rem;
+	--spacing-3xs: 0.8rem;
+	--spacing-2xs: 1.2rem;
+	--spacing-xs: 1.6rem;
+	--spacing-s: 2.4rem;
+	--spacing-m: 3.2rem;
+	--spacing-l: 4rem;
+	--spacing-xl: 4.8rem;
+	--spacing-2xl: 5.6rem;
+	--spacing-3xl: 6.4rem;
+	--spacing-4xl: 7.2rem;
+	--spacing-5xl: 8rem;
+	--spacing-6xl: 9.6rem;
+	--spacing-7xl: 11.2rem;
+	--spacing-8xl: 12.8rem;
+	--spacing-9xl: 19.2rem;
+
+	/* Transitions */
+	--animation-speed: 0.3s;
+}

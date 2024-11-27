@@ -1,0 +1,69 @@
+html {
+	box-sizing: border-box;
+	font-size: 10px; /* base for rem values */
+}
+
+::selection {
+	background: var(--color-selection);
+}
+
+body {
+	font-size: var(--global-font-size);
+	overflow-x: hidden;
+	background: var(--color-theme-black); /* Fallback for when there is no custom background color defined. */
+}
+
+/**
+ * Inherit box-sizing to make it easier to change the property for
+ * components that leverage other behavior; see
+ * http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+hr {
+	background-color: var(--border-color-light);
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+/* Extra wide images within figure tags don't overflow the content area. */
+figure {
+	margin: 0.5em 0;
+}
+
+.border--20 {
+	border-radius: 2rem;
+}
+
+
+
+@media (--desktop-query) {
+	.site-main {
+		margin-left: 6.8rem;
+	}
+
+	section .container {
+		max-width: 100% !important;
+		margin-left: 6rem;
+		margin-right: 12rem;
+	}
+}
+
+@media (min-width: 2000px) {
+	section .container {
+		max-width: 1800px !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

@@ -1,0 +1,41 @@
+/*----------------------------
+# Colors
+----------------------------*/
+
+.color--black {
+	color: var(--color-theme-black) !important;
+}
+
+.color--grey {
+	color: var(--color-theme-grey) !important;
+}
+
+.color--white {
+	color: var(--color-theme-white) !important;
+}
+
+.color--l-grey {
+	color: var(--color-theme-l-grey) !important;
+}
+
+.color--text-grey {
+	color: var(--color-theme-text-grey) !important;
+}
+
+/* Fills */
+
+.fill--black {
+	fill: var(--color-theme-black);
+}
+
+.fill--grey {
+	fill: var(--color-theme-grey);
+}
+
+.fill--white {
+	fill: var(--color-theme-white);
+}
+
+.fill--l-grey {
+	fill: var(--color-theme-l-grey);
+}
